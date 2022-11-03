@@ -1,0 +1,90 @@
+.itemHeader { grid-area: header; }
+.itemMenu { grid-area: menu; }
+.itemLeft { grid-area: left; }
+.itemRight { grid-area: right; }
+.itemFooter { grid-area: footer; }
+
+body{
+    background-image: url(shrek.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header'
+    'menu left left right right'
+    'menu footer footer footer footer';
+    grid-template-columns: 25% 15% 15% 15% 15% ;
+  gap: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 10%;
+  justify-content: center;
+  align-content: center;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  padding: 10% 1%;
+  font-size: 200%;
+  background-image: repeating-linear-gradient(grey, black);
+}
+.button1 {
+    background-color: #4CAF50;
+    border-color: black;
+    border: 5px solid black;
+    color: white;
+    padding: 15% 32%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 90%;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.button1:hover{
+    transition-duration: 1000ms;
+    background-color: green;
+}
+.button2 {
+    background-color: red;
+    border-color: black;
+    border: 5px solid black;
+    color: white;
+    padding: 15% 32%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.button2:hover{
+    transition-duration: 1000ms;
+    background-color: darkred;
+}
+
+.buttonMenu{
+    background-color: gray;
+    border-color: black;
+    border: 5px solid black;
+    color: black;
+    padding: 10% 20%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 60%;
+    margin: 4% 2%;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.buttonMenu:hover{
+    transition-duration: 1000ms;
+    background-color: white;
+
+}
